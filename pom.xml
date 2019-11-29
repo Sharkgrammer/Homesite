@@ -5,7 +5,7 @@
   <artifactId>sharkie</artifactId>
   <packaging>war</packaging>
   <version>1</version>
-  <name>sharkie Maven Webapp</name>
+  <name>Homesite</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
