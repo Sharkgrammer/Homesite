@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Sharkolate</title>
+<title>Daniel Keane Kelly</title>
 <link rel="shortcut icon" href="images/chocoLogo.png">
 
 <!-- CSS -->
