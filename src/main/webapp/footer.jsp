@@ -10,23 +10,6 @@
             <a class="footer-link" href="shop.jsp">Shop</a>
         </div>
 
-        <% if (result == true) { %>
-
-        <div class="col-sm-2">
-            <a class="footer-link" href="user.jsp">Account</a>
-        </div>
-
-        <div class="col-sm-2">
-            <a class="footer-link" href="purchase.jsp">Cart</a>
-        </div>
-
-        <% } else { %>
-        <div class="col-sm-2">
-        </div>
-
-        <div class="col-sm-2">
-        </div>
-        <% }%>
         <div class="col-sm-2">
             <a class="footer-link" href="#" onclick="switchLan()">Switch Language</a>
         </div>
@@ -39,8 +22,6 @@
 
 
 </footer>
-
-<script>try{document.getElementById("loading").style = "display:none";}catch(e){console.log(e);}</script>
 
 <!-- Bootstrap core JavaScript -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
