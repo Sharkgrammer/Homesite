@@ -9,7 +9,6 @@ body{
     background-color: #e9ebee;
     position: relative;
     margin: 0;
-    padding-bottom: 6rem;
     min-height: 100%;
 }
 
@@ -46,66 +45,31 @@ body{
     text-shadow: 1px 1px 2px #000000, 0 0 1em #000000, 0 0 0.2em #000000;
 }
 
-.navsize{
-    font-size: 110%;
-}
-
-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
-}
-
-.footer-link{
-    font-size: 90%;
-    color: white;
-    text-decoration: none;
-    margin:auto;
-    padding:4px;
-}
-
 .footer-image{
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     margin-left: 12px;
     margin-right: 12px;
-}
-
-.footer-link:hover{
-    color: #888888;
-}
-
-.footer-pad{
-    padding:5px;
-}
-
-.about-img{
-    margin:10px;
+    opacity: 0.7;
+    border: 1px solid white;
 }
 
 .contact-form{
     width:100%;
     padding:10px;
     margin:10px;
+    opacity: 0.7;
 }
 
-.contact-but{
-    background-color: #873B00;
-    font-size: 120%;
-    border-radius: 25px;
-    color: white;
-    width:30%;
-    padding:10px;
-    margin:10px;
+.footer-image:hover{
+    border: 2px solid white;
+    opacity: 0.9;
 }
 
-.contact-but:hover {
-    background-color: #692E00;
+.contact-form:hover{
+    opacity: 0.9;
 }
+
 
 .center-screen {
     display: flex;
@@ -127,6 +91,26 @@ footer {
 
 .content{
     background-color: white;
+}
+
+.img-profile {
+    position: absolute;
+    top: -15%;
+    height: 140%;
+    width: auto;
+}
+
+.img-profile-wrappper {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.pad{
+    padding: 20px;
 }
 
 .btn {
@@ -165,8 +149,6 @@ footer {
     color: #33a6cc;
     border-color: #33a6cc;
 }
-
-/* Media querys here. Its set to around 992 as this is where bootstrap switches to mobile mode with the navbar */
 
 @media screen and (max-width: 992px) {
     .title{
