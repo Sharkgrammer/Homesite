@@ -50,7 +50,107 @@
             </div>
         </div>
 
-        <div class="container-fluid border border-dark bg-main">
+        <div class="container-fluid border border-dark bg"  style=" background: url('images/water2.jpg') no-repeat bottom fixed; color: white;">
+
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>                        
+
+            <div class='row'>
+
+                <div class="col-sm-6" >
+
+                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 450px; height: 450px;">
+
+                        <div class="bubble text-center">
+                            <h3><b>2019</b></h3>
+                            <p>Entered Final year of BIS in UCC</p>
+                            <p>Java and DevOps Tutor for Third Year BIS students</p>
+                            <p>Python and Prescriptive Analytics Tutor for MSc BIAS and MSc CyberRisk masters students</p>
+                            <p>Worked as an software development intern in State Street for 6 months in Edinburgh</p>
+                            <p>Developed and published a notification reading application</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                    </br></br></br>
+
+
+                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 420px; height: 420px;">
+
+                        <div class="bubble text-center">
+                            <h1><b>2018</b></h1>
+                            <h4>Shark shark</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6" >
+
+                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 400px; height: 400px;">
+
+                        <div class="bubble text-center">
+                            <h1><b>2017</b></h1>
+                            <h4>Shark shark</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6" >
+                    </br></br></br>
+                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 380px; height: 380px;">
+
+                        <div class="bubble text-center">
+                            <h1><b>2016</b></h1>
+                            <h4>Shark shark</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6" >
+
+                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 340px; height: 340px;">
+
+                        <div class="bubble text-center">
+                            <h1><b>2015</b></h1>
+                            <h4>Shark shark</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6" >
+                    </br></br></br>
+
+                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 320px; height: 320px;">
+
+                        <div class="bubble text-center">
+                            <h1><b>2014</b></h1>
+                            <h4>Shark shark</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid border border-dark">
             </br>
 
             <div class="row">
@@ -77,46 +177,45 @@
             </div>
         </div>
 
+
         <div class="container-fluid" style="height: 100vh; width:100%; background: url('images/water.jpg') no-repeat bottom fixed;">
-            <div>
 
-                <div class="center-image">
+            <div class="center-image">
 
-                    <div class="row">
-                        <div class="col-sm-3" ></div>
+                <div class="row">
+                    <div class="col-sm-3" ></div>
 
-                        <div class="col-sm-6">
-                            <h3 class="text-center title">Contact me!</h3>
+                    <div class="col-sm-6">
+                        <h3 class="text-center title">Contact me!</h3>
 
-                            <form name="create" action="emailServlet" method="POST">
-                                <input type="text" required name="emai" placeholder="Email" class="contact-form"/>
-                                <input type="text" required name="subj" placeholder="Subject" class="contact-form" />
-                                <textarea rows="2" required cols="25" name="deta" placeholder="Details" class="contact-form"></textarea>
+                        <form name="create" action="emailServlet" method="POST">
+                            <input type="text" required name="emai" placeholder="Email" class="contact-form"/>
+                            <input type="text" required name="subj" placeholder="Subject" class="contact-form" />
+                            <textarea rows="2" required cols="25" name="deta" placeholder="Details" class="contact-form"></textarea>
 
-                                <div class="button-group">
-                                    <input type="submit" class="btn btn-outline" href="#project" role="button" value="Submit"/>
-                                    <input type="reset" class="btn btn-outline" href="#contact" role="button" value="Reset"/>
-                                </div>
-                            </form>
-
-                            </br>
-                            
-                            <h4 class="text-center title">Or find me elsewhere</h4>
-
-                            <div class="text-center">
-                                <a href="https://github.com/Sharkgrammer"> <img class="footer-image" src="images/githubLogo.png"> </a>
-                                <a href="https://www.linkedin.com/in/daniel-keane-kelly/"> <img class="footer-image" src="images/linkedinLogo.png"> </a>
+                            <div class="button-group">
+                                <input type="submit" class="btn btn-outline" href="#project" role="button" value="Submit"/>
+                                <input type="reset" class="btn btn-outline" href="#contact" role="button" value="Reset"/>
                             </div>
+                        </form>
 
+                        </br>
 
+                        <h4 class="text-center title">Or find me elsewhere</h4>
+
+                        <div class="text-center">
+                            <a href="https://github.com/Sharkgrammer"> <img class="footer-image" src="images/githubLogo.png"> </a>
+                            <a href="https://www.linkedin.com/in/daniel-keane-kelly/"> <img class="footer-image" src="images/linkedinLogo.png"> </a>
                         </div>
 
-                        <div class="col-sm-3"></div>
 
                     </div>
-                </div>
 
+                    <div class="col-sm-3"></div>
+
+                </div>
             </div>
+
         </div>
 
     </body>
