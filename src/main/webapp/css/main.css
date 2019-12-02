@@ -1,7 +1,7 @@
-/* Main CSS + header/footers*/
-
 html {
     height: 100%;
+    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
 }
 
@@ -14,17 +14,35 @@ body{
 }
 
 .bg-main{
-    background-color: #006363; 
+    background-color: #007AA3;
 }
 
 .logo{
-    width: 100px;
+    width: 150px;
+}
+
+.fadeInLong{
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+    -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+    animation: fadein 4s;
+}
+
+
+.fadeInShort{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
 }
 
 .title{
     color: white;
     width: 100%;
     padding: 0px 5px 0px 5px;
+    font-family: 'Solway', serif;
     text-shadow: 1px 1px 2px #000000, 0 0 1em #000000, 0 0 0.2em #000000;
 }
 
@@ -98,31 +116,57 @@ footer {
     min-height: 100vh;
 }
 
-/* Carousel CSS */
-
-.carousel {
-    overflow:hidden
-}
-
-.cara{
-    height: 500px;
-    margin: auto;
-}
-
-.caramain{
-    padding:2px;
-    background-color: #000000; 
+.center-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
 }
 
 .content{
-    background-color: white; 
+    background-color: white;
 }
 
-.caraspace{
-    padding: 5px
+.btn {
+    padding: 14px 24px;
+    text-transform: uppercase;
 }
 
-/* Media querys here. Its set to 992 as this is where bootstrap switches to mobile mode with the navbar */
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-outline {
+    background: none;
+    padding: 12px 22px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 2px solid #007AA3;
+    color: #007AA3;
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active{
+    color: #33a6cc;
+    border-color: #33a6cc;
+}
+
+/* Media querys here. Its set to around 992 as this is where bootstrap switches to mobile mode with the navbar */
 
 @media screen and (max-width: 992px) {
     .title{
@@ -133,16 +177,29 @@ footer {
         width: 60px;
     }
 
+    nav{
+        height:80px;
+    }
+
+    .navMove{
+        margin-top:80px;
+    }
+
 }
 
-/* Animation code here */
+@media screen and (max-width: 600px) {
 
-@-webkit-keyframes slideUp {
-    from {bottom: -300px; opacity: 0} 
-    to {bottom: 0; opacity: 1}
+    nav{
+        height:120px;
+    }
+
+    .navMove{
+        margin-top:120px;
+    }
+
 }
 
-@keyframes slideUp {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

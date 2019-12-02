@@ -9,5 +9,4 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet

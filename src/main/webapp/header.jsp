@@ -1,9 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-main fixed-top">
     <div class="container">
-        <a href="/ChocolateShop"><img src="images/logo.png" class="logo"/></a>
+        <a href="/sharkie"><img src="images/logo.png" class="logo"/></a>
         
-        <h2 class="text-center title">Daniel Keane Kelly</h2>
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -12,12 +10,17 @@
             <ul class="navbar-nav ml-auto">
 			
                 <li class="nav-item">
-                    <a class="nav-link" href="/ChocolateShop">Home
+                    <a class="nav-link" href="/sharkie">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
+                
                 <li class="nav-item">
-                    <a class="nav-link" href="/ChocolateShop#contact">Contact</a>
+                    <a class="nav-link" href="#project">Projects</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
 
             </ul> 
@@ -25,3 +28,4 @@
 
     </div>
 </nav>
+
