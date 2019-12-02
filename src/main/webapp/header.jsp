@@ -16,19 +16,6 @@
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="shop.jsp">Shop</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/ChocolateShop#reviews">Reviews</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/ChocolateShop#about">About</a>
-                </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="/ChocolateShop#contact">Contact</a>
                 </li>

@@ -5,6 +5,33 @@ html {
     box-sizing: border-box;
 }
 
+body{
+    background-color: #e9ebee;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+}
+
+.bg-main{
+    background-color: #006363; 
+}
+
+.logo{
+    width: 100px;
+}
+
+.title{
+    color: white;
+    width: 100%;
+    padding: 0px 5px 0px 5px;
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #000000, 0 0 0.2em #000000;
+}
+
+.navsize{
+    font-size: 110%;
+}
+
 footer {
     position: absolute;
     right: 0;
@@ -23,10 +50,11 @@ footer {
     padding:4px;
 }
 
-.footer-link-copy{
-    font-size: 80%;
-    color: white;
-    text-decoration: none;
+.footer-image{
+    height: 30px;
+    width: 30px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 .footer-link:hover{
@@ -35,34 +63,6 @@ footer {
 
 .footer-pad{
     padding:5px;
-}
-
-body{
-    font-family: 'Mali', cursive;
-    background-color: #e9ebee;
-    position: relative;
-    margin: 0;
-    padding-bottom: 6rem;
-    min-height: 100%;
-}
-
-.bg-main{
-    background-color: #873B00; 
-    text-shadow: 1px 1px 2px #000000, 0 0 1em #000000, 0 0 0.2em #000000;
-}
-
-.logo{
-    width: 100px;
-}
-
-.title{
-    color: white;
-    width: 100%;
-    padding: 0px 5px 0px 5px;
-}
-
-.navsize{
-    font-size: 110%;
 }
 
 .about-img{
@@ -90,12 +90,12 @@ body{
 }
 
 .center-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
 }
 
 /* Carousel CSS */
@@ -122,238 +122,6 @@ body{
     padding: 5px
 }
 
-/* shopArrivals CSS */
-
-.search-container {
-    float: right;
-    margin:auto;
-    max-width:500px;
-    padding: 6px;
-}
-
-.filter-container{
-    margin:auto;
-    max-width:500px;
-    padding: 6px;
-}
-
-.search-input{
-    width:100%;
-    height:100%;
-    padding: 5px;
-}
-
-.search-response{
-    font-size: 100%;
-    margin:auto;
-    z-index: 10;
-    padding:0px 10px 0px 10px;
-    position: absolute;
-    cursor: pointer; 
-    background-color: white;
-}
-
-/* Modal CSS */
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.modal-gdpr {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #fefefe;
-    -webkit-animation-name: slideUp;
-    -webkit-animation-duration: 0.5s;
-    animation-name: slideUp;
-    animation-duration: 0.5s
-}
-
-.modal-news{
-    background-color: #fefefe;
-    color:black;
-    padding: 10px 20px 10px 20px;
-}
-
-.modal-news-padding{
-    background-color:#873B00;
-    padding:5px 20px 15px 20px;
-    color: white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    width: 70%;
-    transform: translate(-50%, -50%);
-}
-
-.modal-news-btn{
-    width:200px;
-    padding: 5px;
-}
-
-.modal-news-box{
-    width:300px;
-}
-
-.modal-shop{
-    background-color: #fefefe;
-    color:black;
-    padding: 10px 20px 10px 20px;
-}
-
-.modal-shop-padding{
-    background-color:#873B00;
-    padding:5px 25px 15px 25px;
-    color: white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 40%;
-    transform: translate(-50%, -50%);
-}
-
-.modal-shop-btn{
-    width:200px;
-    padding: 5px;
-}
-
-.modal-edge {
-    padding: 2px 16px;
-    background-color: #873B00;
-    color: white;
-}
-
-/* Shop CSS */
-
-.shop-link{
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    color:black;
-}
-
-.shop-link:hover {
-    text-decoration: none;
-    color:#666666;
-}
-
-.shop-margin-top{
-    padding: 10px 15px 10px 15px;
-    overflow: hidden;
-}
-
-.shop-margin{
-    padding: 10px 40px 10px 40px;
-    overflow-y: scroll;
-    height:300px;
-}
-
-.shop-margin-review{
-    padding: 5px 20px 5px 20px;
-    overflow-y: scroll;
-    height:200px;
-}
-
-.shop-arrival-img{
-    height: 50%; 
-    width: 50%; 
-    object-fit: contain;
-}
-
-.shop-norm-img{
-    height: 70%; 
-    width: 70%; 
-    object-fit: contain;
-}
-
-.shop-cara{
-    height: 400px;
-    margin: auto;
-}
-
-.shop-box{
-    margin:10px 0px 10px 0px;
-    padding:5px;
-}
-
-.shop-but, .shop-but:hover, .shop-but:active {
-    background-color: #873B00;
-    font-size: 120%;
-    color: white;
-    height:100%;
-    width:100%;
-    border-radius: 25px;
-    text-align: center;
-    text-decoration: none;
-    max-height: 120px;
-    margin: auto;
-}
-
-.shop-but:hover {
-    background-color: #692E00;
-}
-
-.shop-counter{
-    margin: 20% 0px 20% 0px;
-    width: 50px;
-    height:40%;
-    max-height: 50px;
-}
-
-.shop-filt{
-    padding: 5px;
-    width:100%;
-}
-
-.img-review{
-    height:80px;
-    padding:10px;
-}
-
-/* Purchase CSS */
-
-.purchContainerEx{
-    padding:5px;
-}
-
-.purchContainerIn{
-    padding:5px;
-}
-
-.purchMargin{
-    margin:5px;
-}
-
-/* Admin CSS */
-
-.adminPad{
-    margin:15px 5px 15px 5px;
-}
-
-.adminContainer{
-    width: auto;
-    display: block;
-    padding:5px;
-}
-
-.adminGraph{
-    height:400px;
-}
-
-/* User CSS */
-
-.userMap{
-    height:95%;
-    width:100%;
-    margin:auto;
-}
-
 /* Media querys here. Its set to 992 as this is where bootstrap switches to mobile mode with the navbar */
 
 @media screen and (max-width: 992px) {
@@ -363,39 +131,6 @@ body{
 
     .logo{
         width: 60px;
-    }
-
-    .search-container {
-        float: none;
-    }
-
-    .modal-news h3{
-        font-size:15px;
-    }
-
-    .modal-news{
-        padding: 5px 10px 5px 10px;
-        line-height: 20%;
-    }
-
-    .modal-news-padding h2{
-        font-size:15px;
-    }
-
-    .modal-news-padding{
-        width: 60%;
-        font-size:15px;
-        padding:5px 10px 10px 10px;
-    }
-
-    .modal-news-btn{
-        width:120px;
-        font-size:12px;
-    }
-
-    .modal-news-box{
-        width:120px;
-        font-size:12px;
     }
 
 }

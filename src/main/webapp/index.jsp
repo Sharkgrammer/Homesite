@@ -10,14 +10,16 @@
         <%@include file="header.jsp" %> 
         <div style="padding-bottom: 100px"></br></div>
 
-        <div class="container-fluid" style="display:none">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-1" ></div>
 
                 <div class="col-sm-10 content border border-dark rounded center text-center">
                     <div style="padding:20px;">
-                       <h1>Hello Shark</h1>
-					   </div>
+                        
+                        <h1> hey </h1>
+                        
+                    </div>
                 </div>
 
                 <div class="col-sm-1"></div>

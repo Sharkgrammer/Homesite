@@ -3,19 +3,16 @@
     <div class="row text-center ">
 
         <div class="col-sm-2">
-            <a class="footer-link" href="/ChocolateShop">Home</a>
+            </br>
         </div>
-
-        <div class="col-sm-2">
-            <a class="footer-link" href="shop.jsp">Shop</a>
+        
+        <div class="col-sm-8 text-center">
+            <a href="https://github.com/Sharkgrammer"> <img class="footer-image" src="images/githubLogo.png"> </a>
+            <a href="https://www.linkedin.com/in/daniel-keane-kelly/"> <img class="footer-image" src="images/linkedinLogo.png"> </a>
         </div>
-
+        
         <div class="col-sm-2">
-            <a class="footer-link" href="#" onclick="switchLan()">Switch Language</a>
-        </div>
-
-        <div class="col-sm-2">
-            <p class="footer-link-copy">Copyright &copy; Choco 2019</p>
+            </br>
         </div>
 
     </div>
