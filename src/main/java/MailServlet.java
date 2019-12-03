@@ -4,7 +4,11 @@
  * and open the template in the editor.
  */
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -20,6 +24,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -43,10 +48,9 @@ public class MailServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Enumeration<String> Params;
-        
+
         String myEmail = "danielkeanekelly@gmail.com";
-        
-        
+
         String paramStr;
         List<String> ParamsList = new ArrayList<>();
         //handle contact form 
@@ -76,7 +80,12 @@ public class MailServlet extends HttpServlet {
     }
 
     boolean SendEmail(String toAdd, String Subject, String MessageData) {
-        String result = "", fromAdd = "sharksharkshark1111@gmail.com", pass = "sharkshark11/";
+        String result = "", fromAdd = "sharksharkshark1111@gmail.com", pass = readPassword();
+
+        if (pass == null) {
+            return false;
+        }
+
         Properties props = System.getProperties();
         props.put("mail.smtp.starttls.enable", true);
         props.put("mail.smtp.host", "smtp.gmail.com");
@@ -112,6 +121,28 @@ public class MailServlet extends HttpServlet {
         }
 
         return result.equals("");
+    }
+
+    private String readPassword() {
+        String line, temp = "";
+        ServletContext context = getServletContext();
+
+        try {
+            InputStream is = context.getResourceAsStream("/WEB-INF/pass.txt");
+            if (is != null) {
+                InputStreamReader in = new InputStreamReader(is);
+                BufferedReader bufferedReader = new BufferedReader(in);
+
+                while ((line = bufferedReader.readLine()) != null) {
+                    temp += line;
+                }
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.toString());
+            return null;
+        }
+
+        return temp;
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
