@@ -133,7 +133,9 @@ body{
     background: none;
     padding: 12px 22px;
     margin-right: 10px;
+    width: 30%;
     margin-left: 10px;
+    margin-bottom: 10px;
     border: 2px solid #007AA3;
     color: #007AA3;
 }
