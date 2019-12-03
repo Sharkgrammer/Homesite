@@ -7,24 +7,26 @@
 
     <body>
         <div class="container-fluid">
-            <div style="height: 100vh; width:100%; background: url('images/water.jpg') no-repeat bottom fixed;">
+            <div class="bg-water1">
 
                 <div class="center-image">
                     <img src="images/logo.png" class="logo fadeInLong">
-                    <h2 class="text-center title">Daniel Keane Kelly</h2>
+                    <div class="fadeInShort">
+                        <h2 class="text-center title">Daniel Keane Kelly</h2>
+                        <h5 class="text-center title">Self driven developer, shark enthusiast</h5>
 
-                    <div class="button-group fadeInShort">
-                        <a class="btn btn-outline" href="#project" role="button">Projects</a>
-                        <a class="btn btn-outline" href="#contact" role="button">Contact</a>
+
+                        <div class="button-group fadeInShort">
+                            <a class="btn btn-outline" href="#project" role="button">Projects</a>
+                            <a class="btn btn-outline" href="#contact" role="button">Contact</a>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
 
-
         <div class="container-fluid border border-dark">
-            </br>
 
             <div class="row">
                 <div class="col-sm-3 pad" >
@@ -38,155 +40,192 @@
 
                 <div class="col-sm-9 pad">
 
-                    <h1>Who am I?</h1>
+                    <div class="text-container">
+                        <div class="vertical-center">
+                            <h3>Information about me</h1>
+                                <p>I study Business Information Systems in University College Cork. I'm very driven, using my free time to work on projects for fun.
+                                    When I run into a problem that I haven't encountered before, i do a lot of research before deciding on the best path to take.</p>
 
-                    <h3>Something</h3>
-                    <p>Lorem ipsum dolor amet four dollar toast schlitz succulents coloring book pug. Paleo listicle nulla activated charcoal ex humblebrag pitchfork, selvage iPhone man braid pork belly messenger bag distillery vinyl. Four dollar toast anim trust fund ethical enamel pin. Affogato ex voluptate, nulla waistcoat drinking vinegar polaroid wayfarers tofu adipisicing aute kale chips cornhole freegan. Letterpress edison bulb laborum laboris poutine art party keytar jianbing. Laboris cliche master cleanse, messenger bag chillwave raclette pug kale chips bushwick banh mi. Vegan paleo swag helvetica banh mi photo booth whatever chia aute venmo cold-pressed.</p>
+                                <p>My interests revolve around technology, both in terms of researching into them and trying to do new and interesting things with it.</p>
 
-                    <h3>Something else</h3>
-                    <p>Lorem ipsum dolor amet four dollar toast schlitz succulents coloring book pug. Paleo listicle nulla activated charcoal ex humblebrag pitchfork, selvage iPhone man braid pork belly messenger bag distillery vinyl. Four dollar toast anim trust fund ethical enamel pin. Affogato ex voluptate, nulla waistcoat drinking vinegar polaroid wayfarers tofu adipisicing aute kale chips cornhole freegan. Letterpress edison bulb laborum laboris poutine art party keytar jianbing. Laboris cliche master cleanse, messenger bag chillwave raclette pug kale chips bushwick banh mi. Vegan paleo swag helvetica banh mi photo booth whatever chia aute venmo cold-pressed.</p>
 
+                                <p>Finally one of my largest interests surround sharks and other sea life, which my online presence revolves around. 
+                                    I hope to get into shark research in the future and use my current skills to help protect sharks.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid border border-dark bg"  style=" background: url('images/water2.jpg') no-repeat bottom fixed; color: white;">
+        <div class="container-fluid border border-dark bg bg-water2">
 
             </br>
-            </br>
-            </br>
-            </br>
-            </br>                        
+            </br>                     
 
             <div class='row'>
 
-                <div class="col-sm-6" >
+                <div class="col-sm-12" >
+                    <div class='row'>
+                        <div class="col-sm-4">
+                            <div class="bubbleContainer">
 
-                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 450px; height: 450px;">
+                                <div class="bubble text-center">
+                                    <div class="img-circle-wrappper">
+                                        <img class="img-circle" src="images/uccLogo.jpg"/>
+                                    </div>
+                                </div>
 
-                        <div class="bubble text-center">
-                            <h3><b>2019</b></h3>
-                            <p>Entered Final year of BIS in UCC</p>
-                            <p>Java and DevOps Tutor for Third Year BIS students</p>
-                            <p>Python and Prescriptive Analytics Tutor for MSc BIAS and MSc CyberRisk masters students</p>
-                            <p>Worked as an software development intern in State Street for 6 months in Edinburgh</p>
-                            <p>Developed and published a notification reading application</p>
+                            </div>
+                        </div>                           
+
+                        <div class="col-sm-8 text-container">
+                            <div class="vertical-center">
+                                <h4><b>University</b></h4>
+
+                                <p>Final Year student in Business Information Systems in University College Cork</p>
+                                <p>Java and DevOps Tutor for Third Year Business Information Systems students</p>
+                                <p>Python and Prescriptive Analytics Tutor for MSc BIAS and MSc CyberRisk masters students</p>
+                            </div>
                         </div>
 
                     </div>
-
                 </div>
 
-                <div class="col-sm-6">
-                    </br></br></br>
+                <div class="col-sm-12">
+                    <div class='row'>
+
+                        <div class="col-sm-8 text-container">
+                            <div class="vertical-center">
+                                <h4 class="right"><b>Internship in State Street</b></h4>
+
+                                <p class="right">Worked within the Software Development and Maintenance team in State Street, Edinburgh, for six months</p>
+                                <p class="right">My work included working on converting legacy systems, working with cloud applications and working on a IT service platform</p>
+                            </div>
+                        </div>
 
 
-                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 420px; height: 420px;">
+                        <div class="col-sm-4">
+                            <div class="bubbleContainer">
 
-                        <div class="bubble text-center">
-                            <h1><b>2018</b></h1>
-                            <h4>Shark shark</h4>
+                                <div class="bubble text-center">
+                                    <div class="img-circle-wrappper">
+                                        <img class="img-circle" src="images/stateStreetLogo.png"/>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
-
                 </div>
-
-                <div class="col-sm-6" >
-
-                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 400px; height: 400px;">
-
-                        <div class="bubble text-center">
-                            <h1><b>2017</b></h1>
-                            <h4>Shark shark</h4>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-sm-6" >
-                    </br></br></br>
-                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 380px; height: 380px;">
-
-                        <div class="bubble text-center">
-                            <h1><b>2016</b></h1>
-                            <h4>Shark shark</h4>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-sm-6" >
-
-                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 340px; height: 340px;">
-
-                        <div class="bubble text-center">
-                            <h1><b>2015</b></h1>
-                            <h4>Shark shark</h4>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-sm-6" >
-                    </br></br></br>
-
-                    <div class="bubbleContainer" style="background-image: url('images/bubble.png'); background-size: cover; width: 320px; height: 320px;">
-
-                        <div class="bubble text-center">
-                            <h1><b>2014</b></h1>
-                            <h4>Shark shark</h4>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
             </div>
 
-        </div>
+            <div class="col-sm-12" >
+                <div class='row'>
+                    <div class="col-sm-4">
+                        <div class="bubbleContainer">
 
-        <div class="container-fluid border border-dark">
+                            <div class="bubble text-center">
+                                <div class="img-circle-wrappper">
+                                    <img class="img-circle" src="images/githubLogoBig.png"/>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8 text-container">
+                        <div class="vertical-center">
+                            <h4><b>Self-driven work</b></h4>
+
+                            <p>Designed, built and published an application to read notifications out aloud</p>
+                            <p>Built a notes application to sync notes between a Desktop and a Android application</p>
+                            <p>Python command line utilities, such as a search command and a cryptocurrencey web-scraper</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             </br>
+            </br>
+        </div>
 
+        <div class="container-fluid border border-dark" id="project">
             <div class="row">
-                <div class="col-sm-3 pad" >
+                <div class="col-sm-4 pad">
+                    <div class="border border-dark rounded text-center content">
 
-                    <div class="img-profile-wrappper">
-                        <img class="img-profile" src="images/me.jpg"/>
+                        <h3>Sonar: Secure Messenger</h3>
+
+                        <img class="imgLogo" src="images/logoSonar.png"/>
+
+                        <div class="text-left pad">
+                            Secure messaging platform using the shark protocol. 
+
+                            <ul>
+                                <li>Allows users to create conversations and message another user</li>
+                                <li>Built as a part of my college Final Year Project</li>
+                                <li>Will be able to set profile icons and conversation colours</li>
+                                <li>Will use a onion routing system to work as a decentralised network</li>
+                            </ul> 
+                        </div>
+
                     </div>
-
                 </div>
 
+                <div class="col-sm-4 pad">
+                    <div class="border border-dark rounded text-center content">
+                        <h3 class='text-center'>Notes Application</h3>
 
-                <div class="col-sm-9 pad">
+                        <img class="imgLogo text-center" src="images/logoNotes.png"/>
 
-                    <h1>Who am I?</h1>
+                        <div class="text-left pad">
+                            Syncs Notes between Desktop and Android
 
-                    <h3>Something</h3>
-                    <p>Lorem ipsum dolor amet four dollar toast schlitz succulents coloring book pug. Paleo listicle nulla activated charcoal ex humblebrag pitchfork, selvage iPhone man braid pork belly messenger bag distillery vinyl. Four dollar toast anim trust fund ethical enamel pin. Affogato ex voluptate, nulla waistcoat drinking vinegar polaroid wayfarers tofu adipisicing aute kale chips cornhole freegan. Letterpress edison bulb laborum laboris poutine art party keytar jianbing. Laboris cliche master cleanse, messenger bag chillwave raclette pug kale chips bushwick banh mi. Vegan paleo swag helvetica banh mi photo booth whatever chia aute venmo cold-pressed.</p>
+                            <ul>
+                                <li>User passwords are hashed and actual note data is encrypted.</li>
+                                <li>Saves notes on a server with user accounts</li>
+                                <li>Set a number of different colours for desktop and android</li>
+                            </ul> 
+                        </div>
 
-                    <h3>Something else</h3>
-                    <p>Lorem ipsum dolor amet four dollar toast schlitz succulents coloring book pug. Paleo listicle nulla activated charcoal ex humblebrag pitchfork, selvage iPhone man braid pork belly messenger bag distillery vinyl. Four dollar toast anim trust fund ethical enamel pin. Affogato ex voluptate, nulla waistcoat drinking vinegar polaroid wayfarers tofu adipisicing aute kale chips cornhole freegan. Letterpress edison bulb laborum laboris poutine art party keytar jianbing. Laboris cliche master cleanse, messenger bag chillwave raclette pug kale chips bushwick banh mi. Vegan paleo swag helvetica banh mi photo booth whatever chia aute venmo cold-pressed.</p>
-
+                    </div>
                 </div>
+
+                <div class="col-sm-4 pad">
+                    <div class="border border-dark rounded text-center content">
+                        <h3 class='text-center'>Android Assistant</h3>
+
+                        <img class="imgLogo text-center" src="images/logoAssist.png"/>
+
+                        <div class="text-left pad">
+                            Notification Reading app.
+
+                            <ul>
+                                <li>Blacklist certain notifications based on their contents or via a regex expression.</li>
+                                <li>Read out a name as something user defined.</li>
+                                <li>Set a custom message per app package.</li>
+                                <li>Log notifications and blacklist from there.</li>
+                                <li>Exporting and importing custom blacklist/people/app lists.</li>
+                                <li>Use a private mode where it doesn't read out messages.</li>
+                            </ul> 
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
 
 
-        <div class="container-fluid" style="height: 100vh; width:100%; background: url('images/water.jpg') no-repeat bottom fixed;">
+        <div class="container-fluid bg-water1">
 
             <div class="center-image">
 
                 <div class="row">
-                    <div class="col-sm-3" ></div>
 
-                    <div class="col-sm-6">
-                        <h3 class="text-center title">Contact me!</h3>
+                    <div class="col-sm-12">
+                        <h3 id="contact" class="text-center title">Contact me!</h3>
 
                         <form name="create" action="emailServlet" method="POST">
                             <input type="text" required name="emai" placeholder="Email" class="contact-form"/>

@@ -3,6 +3,13 @@ html {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0px;
 }
 
 body{
@@ -10,6 +17,7 @@ body{
     position: relative;
     margin: 0;
     min-height: 100%;
+    overflow: -moz-scrollbars-none;
 }
 
 .bg-main{
@@ -91,6 +99,7 @@ body{
 
 .content{
     background-color: white;
+    height: 100%;
 }
 
 .pad{
@@ -134,12 +143,46 @@ body{
     border-color: #33a6cc;
 }
 
+.bg-water1{
+    height: 100vh;
+    width:100%; 
+    background: url('../images/water.jpg') no-repeat bottom fixed;
+}
+
+.bg-water2{
+    background: url('../images/water2.jpg') no-repeat bottom fixed; color: white;
+}
+
 .bubbleContainer{
     position: relative;
     border-radius: 50%;
+    width: 350px;
+    height: 350px;
     opacity: 0.9;
+    background-image: url('../images/bubble.png');
+    background-size: cover;
     margin:auto;
     padding:auto;
+}
+
+.text-container {
+    height: 350px;
+    position: relative;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
 }
 
 .bubble{
@@ -149,6 +192,29 @@ body{
     width: 100%;
     height: 100%;
     top: 10%;
+}
+
+.bubble-center {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.img-circle {
+    position: absolute;
+    left: -5%;
+    height: 105%;
+    width: auto;
+}
+
+.img-circle-wrappper {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    top: -10%;
+    opacity: 0.7;
+    overflow: hidden;
 }
 
 .img-profile {
@@ -162,9 +228,14 @@ body{
     position: relative;
     display: inline-block;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     overflow: hidden;
+}
+
+.imgLogo{
+    width: 30%;
+    height: 30%;
 }
 
 @media screen and (max-width: 992px) {
