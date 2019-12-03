@@ -13,7 +13,7 @@
                     <img src="images/logo.png" class="logo fadeInLong">
                     <div class="fadeInShort text-center">
                         <h2 class="title">Daniel Keane Kelly</h2>
-                        <h5 class="title">Self driven developer, shark enthusiast</h5>
+                        <h5 class="title">Self-driven, independent developer</h5>
 
                         <div class="button-group fadeInShort">
                             <a class="btn btn-outline" href="#about" role="button">About me</a>
