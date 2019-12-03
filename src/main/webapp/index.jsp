@@ -30,7 +30,7 @@
         <div class="container-fluid border border-dark" id="about">
             </br>
             <div class="row">
-                <div class="col-sm-4 pad text-center" >
+                <div class="col-sm-4 pad text-center profile-div" style="height:250px">
                     <img class="img-profile" src="images/meCircle.png"/>
                 </div>
 
