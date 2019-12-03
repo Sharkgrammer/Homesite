@@ -74,7 +74,7 @@ body{
     opacity: 0.9;
 }
 
-.contact-form:hover{
+.contact-form:hover, .contact-form:focus, .contact-form:active{
     opacity: 0.9;
 }
 
@@ -188,6 +188,18 @@ body{
 .imgLogo{
     width: 100px;
     height: auto;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+a.fill-div:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 992px) {

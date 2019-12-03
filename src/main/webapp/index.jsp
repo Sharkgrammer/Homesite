@@ -48,6 +48,8 @@
 
                                 <p>Finally one of my largest interests surround sharks and other sea life, which my online presence revolves around. 
                                     I hope to get into shark research in the future and use my current skills to help protect sharks.</p>
+
+                                <a href="docs/CV.pdf">Find my CV here</a>
                         </div>
                     </div>
                 </div>
@@ -147,62 +149,66 @@
                 <div class="col-sm-4 pad">
                     <div class="border border-dark rounded text-center content">
 
-                        <h3>Sonar: Secure Messenger</h3>
+                        <a href="https://github.com/Sharkgrammer/Sonar-Secure-Messaging" class="fill-div">
+                            <h3>Sonar: Secure Messenger</h3>
 
-                        <img class="imgLogo" src="images/logoSonar.png"/>
+                            <img class="imgLogo" src="images/logoSonar.png"/>
 
-                        <div class="text-left pad">
-                            Secure messaging platform using the shark protocol. 
+                            <div class="text-left pad">
+                                Secure messaging platform using the shark protocol. 
 
-                            <ul>
-                                <li>Allows users to create conversations and message another user</li>
-                                <li>Built as a part of my college Final Year Project</li>
-                                <li>Will be able to set profile icons and conversation colours</li>
-                                <li>Will use a onion routing system to work as a decentralised network</li>
-                            </ul> 
-                        </div>
+                                <ul>
+                                    <li>Allows users to create conversations and message another user</li>
+                                    <li>Built as a part of my college Final Year Project</li>
+                                    <li>Will be able to set profile icons and conversation colours</li>
+                                    <li>Will use a onion routing system to work as a decentralised network</li>
+                                </ul> 
 
+                            </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="col-sm-4 pad">
                     <div class="border border-dark rounded text-center content">
-                        <h3 class='text-center'>Notes Application</h3>
+                        <a href="https://github.com/Sharkgrammer/notes-app" class="fill-div">
+                            <h3 class='text-center'>Notes Application</h3>
 
-                        <img class="imgLogo text-center" src="images/logoNotes.png"/>
+                            <img class="imgLogo text-center" src="images/logoNotes.png"/>
 
-                        <div class="text-left pad">
-                            Syncs Notes between Desktop and Android
+                            <div class="text-left pad">
+                                Syncs Notes between Desktop and Android
 
-                            <ul>
-                                <li>User passwords are hashed and actual note data is encrypted.</li>
-                                <li>Saves notes on a server with user accounts</li>
-                                <li>Set a number of different colours for desktop and android</li>
-                            </ul> 
-                        </div>
-
+                                <ul>
+                                    <li>User passwords are hashed and actual note data is encrypted.</li>
+                                    <li>Saves notes on a server with user accounts</li>
+                                    <li>Set a number of different colours for desktop and android</li>
+                                </ul> 
+                            </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="col-sm-4 pad">
                     <div class="border border-dark rounded text-center content">
-                        <h3 class='text-center'>Android Assistant</h3>
+                        <a href="https://github.com/Sharkgrammer/Android-Assistant" class="fill-div">
+                            <h3 class='text-center'>Android Assistant</h3>
 
-                        <img class="imgLogo text-center" src="images/logoAssist.png"/>
+                            <img class="imgLogo text-center" src="images/logoAssist.png"/>
 
-                        <div class="text-left pad">
-                            Notification Reading app.
+                            <div class="text-left pad">
+                                Notification Reading app.
 
-                            <ul>
-                                <li>Blacklist certain notifications based on their contents or via a regex expression.</li>
-                                <li>Read out a name as something user defined.</li>
-                                <li>Set a custom message per app package.</li>
-                                <li>Log notifications and blacklist from there.</li>
-                                <li>Exporting and importing custom blacklist/people/app lists.</li>
-                                <li>Use a private mode where it doesn't read out messages.</li>
-                            </ul> 
-                        </div>
-
+                                <ul>
+                                    <li>Blacklist certain notifications based on their contents or via a regex expression.</li>
+                                    <li>Read out a name as something user defined.</li>
+                                    <li>Set a custom message per app package.</li>
+                                    <li>Log notifications and blacklist from there.</li>
+                                    <li>Exporting and importing custom blacklist/people/app lists.</li>
+                                    <li>Use a private mode where it doesn't read out messages.</li>
+                                </ul> 
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -219,7 +225,7 @@
                     <div class="col-sm-12">
                         <h3 id="contact" class="text-center title">Contact me!</h3>
 
-                        <form name="create" action="emailServlet" method="POST" class="pad">
+                        <form name="create" action="MailServlet" method="POST" class="pad">
                             <input type="text" required name="emai" placeholder="Email" class="contact-form"/>
                             <input type="text" required name="subj" placeholder="Subject" class="contact-form" />
                             <textarea rows="2" required cols="25" name="deta" placeholder="Details" class="contact-form"></textarea>
@@ -238,7 +244,6 @@
                             <a href="https://github.com/Sharkgrammer"> <img class="footer-image" src="images/githubLogo.png"> </a>
                             <a href="https://www.linkedin.com/in/daniel-keane-kelly/"> <img class="footer-image" src="images/linkedinLogo.png"> </a>
                         </div>
-
 
                     </div>
 
