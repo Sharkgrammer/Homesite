@@ -9,14 +9,15 @@
         <div class="container-fluid">
             <div class="bg-water1">
 
-                <div class="center-image">
+                <div class="center-image" >
                     <img src="images/logo.png" class="logo fadeInLong">
-                    <div class="fadeInShort">
-                        <h2 class="text-center title">Daniel Keane Kelly</h2>
-                        <h5 class="text-center title">Self driven developer, shark enthusiast</h5>
-
+                    <div class="fadeInShort text-center">
+                        <h2 class="title">Daniel Keane Kelly</h2>
+                        <h5 class="title">Self driven developer, shark enthusiast</h5>
 
                         <div class="button-group fadeInShort">
+                            <a class="btn btn-outline" href="#about" role="button">About me</a>
+                            <a class="btn btn-outline" href="#time" role="button">Timeline</a>
                             <a class="btn btn-outline" href="#project" role="button">Projects</a>
                             <a class="btn btn-outline" href="#contact" role="button">Contact</a>
                         </div>
@@ -26,19 +27,15 @@
             </div>
         </div>
 
-        <div class="container-fluid border border-dark">
-
+        <div class="container-fluid border border-dark" id="about">
+            </br>
             <div class="row">
-                <div class="col-sm-3 pad" >
-
-                    <div class="img-profile-wrappper">
-                        <img class="img-profile" src="images/me.jpg"/>
-                    </div>
-
+                <div class="col-sm-4 pad text-center" >
+                    <img class="img-profile" src="images/meCircle.png"/>
                 </div>
 
 
-                <div class="col-sm-9 pad">
+                <div class="col-sm-8 pad">
 
                     <div class="text-container">
                         <div class="vertical-center">
@@ -55,9 +52,10 @@
                     </div>
                 </div>
             </div>
+            </br>
         </div>
 
-        <div class="container-fluid border border-dark bg bg-water2">
+        <div class="container-fluid border border-dark bg bg-water2" id="time">
 
             </br>
             </br>                     
@@ -70,16 +68,14 @@
                             <div class="bubbleContainer">
 
                                 <div class="bubble text-center">
-                                    <div class="img-circle-wrappper">
-                                        <img class="img-circle" src="images/uccLogo.jpg"/>
-                                    </div>
+                                    <img class="img-circle" src="images/uccLogo.png"/>
                                 </div>
 
                             </div>
                         </div>                           
 
                         <div class="col-sm-8 text-container">
-                            <div class="vertical-center">
+                            <div class="vertical-center pad">
                                 <h4><b>University</b></h4>
 
                                 <p>Final Year student in Business Information Systems in University College Cork</p>
@@ -95,7 +91,7 @@
                     <div class='row'>
 
                         <div class="col-sm-8 text-container">
-                            <div class="vertical-center">
+                            <div class="vertical-center pad">
                                 <h4 class="right"><b>Internship in State Street</b></h4>
 
                                 <p class="right">Worked within the Software Development and Maintenance team in State Street, Edinburgh, for six months</p>
@@ -108,9 +104,7 @@
                             <div class="bubbleContainer">
 
                                 <div class="bubble text-center">
-                                    <div class="img-circle-wrappper">
-                                        <img class="img-circle" src="images/stateStreetLogo.png"/>
-                                    </div>
+                                    <img class="img-circle" src="images/stateStreetLogoBig.png"/>
                                 </div>
 
                             </div>
@@ -126,16 +120,14 @@
                         <div class="bubbleContainer">
 
                             <div class="bubble text-center">
-                                <div class="img-circle-wrappper">
-                                    <img class="img-circle" src="images/githubLogoBig.png"/>
-                                </div>
+                                <img class="img-circle" src="images/githubLogoBig.png"/>
                             </div>
 
                         </div>
                     </div>
 
                     <div class="col-sm-8 text-container">
-                        <div class="vertical-center">
+                        <div class="vertical-center pad">
                             <h4><b>Self-driven work</b></h4>
 
                             <p>Designed, built and published an application to read notifications out aloud</p>
@@ -227,7 +219,7 @@
                     <div class="col-sm-12">
                         <h3 id="contact" class="text-center title">Contact me!</h3>
 
-                        <form name="create" action="emailServlet" method="POST">
+                        <form name="create" action="emailServlet" method="POST" class="pad">
                             <input type="text" required name="emai" placeholder="Email" class="contact-form"/>
                             <input type="text" required name="subj" placeholder="Subject" class="contact-form" />
                             <textarea rows="2" required cols="25" name="deta" placeholder="Details" class="contact-form"></textarea>
