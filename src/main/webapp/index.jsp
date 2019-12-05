@@ -42,9 +42,9 @@
                         <div class="vertical-center">
                             <h3>Information about me</h1>
                                 <p>I study Business Information Systems in University College Cork. I'm very driven, using my free time to work on projects for fun.
-                                    When I run into a problem that I haven't encountered before, i do a lot of research before deciding on the best path to take.</p>
+                                    When I run into a problem that I haven't encountered before, I do a lot of research before deciding on the best path to take.</p>
 
-                                <p>My interests revolve around technology, both in terms of researching into them and trying to do new and interesting things with it.</p>
+                                <p>My interests revolve around technology, both in terms of researching into new tech and trying to do new and interesting things with it.</p>
 
 
                                 <p>Finally one of my largest interests surround sharks and other sea life, which my online presence revolves around. 
@@ -135,7 +135,7 @@
                             <h4><b>Self-driven work</b></h4>
 
                             <p>Designed, built and published an application to read notifications out aloud</p>
-                            <p>Built a notes application to sync notes between a Desktop and a Android application</p>
+                            <p>Built a notes application to sync notes between a Desktop and an Android application</p>
                             <p>Python command line utilities, such as a search command and a cryptocurrencey web-scraper</p>
                         </div>
                     </div>
