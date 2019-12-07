@@ -80,8 +80,17 @@ public class MailServlet extends HttpServlet {
     }
 
     boolean SendEmail(String toAdd, String Subject, String MessageData) {
-        String result = "", fromAdd = "sharksharkshark1111@gmail.com", pass = readPassword();
+        
+        String result = "", fromAdd, pass;
 
+        try{
+            fromAdd = String.valueOf(System.getenv("email"));
+            pass = String.valueOf(System.getenv("pass"));
+        }catch(Exception e){
+            System.out.println(e.toString());
+            return false;
+        }
+        
         if (pass == null) {
             return false;
         }
