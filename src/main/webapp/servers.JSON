@@ -1,14 +1,12 @@
 {
-  "servers": {
-    "server1": {
-      "id": "1",
-      "ip": "192.168.1.1",
-      "key": "pubkey"
-    },
-    "server2": {
-      "id": "2",
-      "ip": "192.168.1.10",
-      "key": "pubkey"
-    }
+  "server1": {
+    "id": "1",
+    "ip": "192.168.1.1",
+    "key": "pubkey"
+  },
+  "server2": {
+    "id": "2",
+    "ip": "192.168.1.10",     
+	"key": "pubkey"
   }
 }
