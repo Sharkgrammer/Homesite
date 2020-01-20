@@ -2,26 +2,26 @@
   {
     "id": "1",
     "ip": "http://localhost:6000/",
-    "key": "�㍛���P�ߢT�h�&��� v�];���O�x�X�5_�P��� "
+    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCWweRDSvmdKcnJyTvCcDeo3RQ4r0OIm0p8YuR6woSVxD1quUYCe17p4j4o9WT/qh0Q57FNTHxmIV1y+uc10EybLTWl4REe/fVK39G8LnCyc63xqw30442bhcKB1e9Qqd+iVNUcaL0mkvWlIHazFV07s76FT4F4xVj4NV/FULTDzQIDAQAB"
   },
   {
     "id": "2",
     "ip": "http://localhost:6001/",
-    "key": "pubkey"
+    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCWweRDSvmdKcnJyTvCcDeo3RQ4r0OIm0p8YuR6woSVxD1quUYCe17p4j4o9WT/qh0Q57FNTHxmIV1y+uc10EybLTWl4REe/fVK39G8LnCyc63xqw30442bhcKB1e9Qqd+iVNUcaL0mkvWlIHazFV07s76FT4F4xVj4NV/FULTDzQIDAQAB"
   },
   {
     "id": "3",
     "ip": "http://localhost:6002/",
-    "key": "pubkey"
+    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCWweRDSvmdKcnJyTvCcDeo3RQ4r0OIm0p8YuR6woSVxD1quUYCe17p4j4o9WT/qh0Q57FNTHxmIV1y+uc10EybLTWl4REe/fVK39G8LnCyc63xqw30442bhcKB1e9Qqd+iVNUcaL0mkvWlIHazFV07s76FT4F4xVj4NV/FULTDzQIDAQAB"
   },
   {
     "id": "4",
     "ip": "http://localhost:6003/",
-    "key": "pubkey"
+    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCWweRDSvmdKcnJyTvCcDeo3RQ4r0OIm0p8YuR6woSVxD1quUYCe17p4j4o9WT/qh0Q57FNTHxmIV1y+uc10EybLTWl4REe/fVK39G8LnCyc63xqw30442bhcKB1e9Qqd+iVNUcaL0mkvWlIHazFV07s76FT4F4xVj4NV/FULTDzQIDAQAB"
   },
   {
     "id": "5",
     "ip": "http://localhost:6004/",
-    "key": "pubkey"
+    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCWweRDSvmdKcnJyTvCcDeo3RQ4r0OIm0p8YuR6woSVxD1quUYCe17p4j4o9WT/qh0Q57FNTHxmIV1y+uc10EybLTWl4REe/fVK39G8LnCyc63xqw30442bhcKB1e9Qqd+iVNUcaL0mkvWlIHazFV07s76FT4F4xVj4NV/FULTDzQIDAQAB"
   }
 ]
