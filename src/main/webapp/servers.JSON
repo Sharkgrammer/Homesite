@@ -1,27 +1,27 @@
 [
   {
     "id": "1",
-    "ip": "192.168.1.1",
+    "ip": "http://localhost:6000/",
     "key": "pubkey"
   },
   {
     "id": "2",
-    "ip": "192.168.1.10",
+    "ip": "http://localhost:6001/",
     "key": "pubkey"
   },
   {
     "id": "3",
-    "ip": "192.168.1.13",
+    "ip": "http://localhost:6002/",
     "key": "pubkey"
   },
   {
     "id": "4",
-    "ip": "192.168.1.12",
+    "ip": "http://localhost:6003/",
     "key": "pubkey"
   },
   {
     "id": "5",
-    "ip": "192.168.1.11",
+    "ip": "http://localhost:6004/",
     "key": "pubkey"
   }
 ]
