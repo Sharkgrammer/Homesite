@@ -228,9 +228,9 @@
                         <h3 id="contact" class="text-center title">Contact me!</h3>
 
                         <form name="create" action="MailServlet" method="POST" class="pad">
-                            <input type="text" required name="emai" placeholder="Email" class="contact-form"/>
-                            <input type="text" required name="subj" placeholder="Subject" class="contact-form" />
-                            <textarea rows="2" required cols="25" name="deta" placeholder="Details" class="contact-form"></textarea>
+                            <input type="text" required name="emai" id="emai" placeholder="Email" class="contact-form"/>
+                            <input type="text" required name="subj" id="subj" placeholder="Subject" class="contact-form" />
+                            <textarea rows="2" required cols="25" name="deta" id="deta" placeholder="Details" class="contact-form"></textarea>
 
                             <div class="button-group">
                                 <input type="submit" class="btn btn-outline" href="#project" role="button" value="Submit"/>

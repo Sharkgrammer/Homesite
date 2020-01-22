@@ -65,6 +65,11 @@ public class MailServlet extends HttpServlet {
             String Email = ParamsList.get(0),
                     QuerySub = ParamsList.get(1),
                     QueryMsg = ParamsList.get(2);
+            
+            Email = request.getParameter("emai");
+            QuerySub = request.getParameter("subj");
+            QueryMsg = request.getParameter("deta");
+
 
             boolean res = SendEmail("Email from Homesite: " + QuerySub,
                     Email + ": <q>'" + QueryMsg + "'</q>");
