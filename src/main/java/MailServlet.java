@@ -49,6 +49,8 @@ public class MailServlet extends HttpServlet {
             throws ServletException, IOException {
         Enumeration<String> Params;
 
+        String toAdd = "danielkeanekelly@gmail.com";
+        
         String paramStr;
         List<String> ParamsList = new ArrayList<>();
         //handle contact form 
@@ -71,7 +73,7 @@ public class MailServlet extends HttpServlet {
             QueryMsg = request.getParameter("deta");
 
 
-            boolean res = SendEmail("Email from Homesite: " + QuerySub,
+            boolean res = SendEmail(toAdd, "Email from Homesite: " + QuerySub,
                     Email + ": <q>'" + QueryMsg + "'</q>");
 
             System.out.println(Email + " " + QuerySub + " " + QueryMsg);
@@ -86,7 +88,7 @@ public class MailServlet extends HttpServlet {
 
     }
 
-    boolean SendEmail(String Subject, String MessageData) {
+    boolean SendEmail(String toAdd, String Subject, String MessageData) {
 
         String result = "", fromAdd, pass;
 
@@ -117,7 +119,7 @@ public class MailServlet extends HttpServlet {
             InternetAddress from = new InternetAddress(fromAdd);
             message.setSubject(Subject);
             message.setFrom(from);
-            message.addRecipients(Message.RecipientType.TO, InternetAddress.parse("danielkeanekelly@gmail.com"));
+            message.addRecipients(Message.RecipientType.TO, InternetAddress.parse(toAdd));
             Multipart multipart = new MimeMultipart("alternative");
             BodyPart messageBodyPart = new MimeBodyPart();
             messageBodyPart.setText(MessageData);
