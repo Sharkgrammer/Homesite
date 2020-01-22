@@ -119,6 +119,7 @@ public class MailServlet extends HttpServlet {
             InternetAddress from = new InternetAddress(fromAdd);
             message.setSubject(Subject);
             message.setFrom(from);
+            message.addRecipients(Message.RecipientType.TO, InternetAddress.parse(fromAdd));
             message.addRecipients(Message.RecipientType.TO, InternetAddress.parse(toAdd));
             Multipart multipart = new MimeMultipart("alternative");
             BodyPart messageBodyPart = new MimeBodyPart();
