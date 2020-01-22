@@ -63,34 +63,36 @@ public class MailServlet extends HttpServlet {
             }
         }
 
-        String Email = ParamsList.get(0),
-                QuerySub = ParamsList.get(1),
-                QueryMsg = ParamsList.get(2);
+        if (ParamsList.size() > 0) {
+            String Email = ParamsList.get(0),
+                    QuerySub = ParamsList.get(1),
+                    QueryMsg = ParamsList.get(2);
 
-        boolean res = SendEmail(myEmail, "Email from Homesite: " + QuerySub,
-                Email + ": <q>'" + QueryMsg + "'</q>");
+            boolean res = SendEmail(myEmail, "Email from Homesite: " + QuerySub,
+                    Email + ": <q>'" + QueryMsg + "'</q>");
 
-        if (res) {
-            request.setAttribute("resultContact", "Thank you for your query");
-        } else {
-            request.setAttribute("resultContact", "Error: Please try again");
+            if (res) {
+                request.setAttribute("resultContact", "Thank you for your query");
+            } else {
+                request.setAttribute("resultContact", "Error: Please try again");
+            }
+            request.getRequestDispatcher("/index.jsp").forward(request, response);
         }
-        request.getRequestDispatcher("/index.jsp").forward(request, response);
 
     }
 
     boolean SendEmail(String toAdd, String Subject, String MessageData) {
-        
+
         String result = "", fromAdd, pass;
 
-        try{
+        try {
             fromAdd = String.valueOf(System.getenv("email"));
             pass = String.valueOf(System.getenv("pass"));
-        }catch(Exception e){
+        } catch (Exception e) {
             System.out.println(e.toString());
             return false;
         }
-        
+
         if (pass == null) {
             return false;
         }
