@@ -99,7 +99,7 @@
 
 					<p>Sonar does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
 
-					<p> Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info">Privacy Policy Generator</a> and the <a href="https://www.privacypolicytemplate.net/">Privacy Policy Template</a>.</p>
+					<p>Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info">Privacy Policy Generator</a> and the <a href="https://www.privacypolicytemplate.net/">Privacy Policy Template</a>.</p>
 
 					<p><b>Tl:dr, we promise that we cannot read any of your data, and that everything is and always will be GDPR complaint compliant and has your privacy in mind<b><p>
 
