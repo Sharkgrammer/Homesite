@@ -4,27 +4,13 @@ import os
 
 from django.shortcuts import render
 
-from home.models import Project, Personal, Experience
-
 
 def index(request):
-    projects_shown = 6
-    all_projects = Project.objects.all()
-    projects_len = len(all_projects)
-    projects = reversed(list(all_projects[projects_len - projects_shown: projects_len]))
-
-    all_personals = Personal.objects.all()
-
-    all_experiences = Experience.objects.all()
-    experience_shown = 3
-    experience_len = len(all_experiences)
-    experiences = reversed(list(all_experiences[experience_len - experience_shown: experience_len]))
-
-    return render(request, 'index.html', {'all_projects': projects,
-                                          "all_personals": all_personals, "all_experiences": experiences})
+    return render(request, 'index.html')
 
 
 def email(request):
+
     if request.method == "POST":
         params = request.POST
 
@@ -51,8 +37,7 @@ def email(request):
 
             server.sendmail(send_mail, to_mail, content)
 
-        return index(request)
+        return render(request, 'index.html')
 
 
-def test(request):
-    return render(request, 'test.html')
+
