@@ -4,13 +4,21 @@ import os
 
 from django.shortcuts import render
 
+from home.models import Project
+
 
 def index(request):
-    return render(request, 'index.html')
+    all_projects = Project.objects.all()  # [:3]
+
+    print(len(all_projects))
+
+    for x in all_projects:
+        print(x.title)
+
+    return render(request, 'index.html', {'all_projects': all_projects})
 
 
 def email(request):
-
     if request.method == "POST":
         params = request.POST
 
@@ -37,7 +45,8 @@ def email(request):
 
             server.sendmail(send_mail, to_mail, content)
 
-        return render(request, 'index.html')
+        return index(request)
 
 
-
+def test(request):
+    return render(request, 'test.html')

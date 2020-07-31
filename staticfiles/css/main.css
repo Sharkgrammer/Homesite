@@ -1,0 +1,248 @@
+html {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0px;
+}
+
+body{
+    background-color: #e9ebee;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    overflow: -moz-scrollbars-none;
+}
+
+.bg-main{
+    background-color: #007AA3;
+}
+
+.logo{
+    width: 150px;
+}
+
+.fadeInLong{
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+    -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+    animation: fadein 4s;
+}
+
+
+.fadeInShort{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+.title{
+    color: white;
+    width: 100%;
+    padding: 0px 5px 0px 5px;
+    font-family: 'Solway', serif;
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #000000, 0 0 0.2em #000000;
+}
+
+.footer-image{
+    height: 50px;
+    width: 50px;
+    margin-left: 12px;
+    margin-right: 12px;
+    opacity: 0.7;
+    border: 1px solid white;
+}
+
+.contact-form{
+    width:100%;
+    padding:10px;
+    margin:10px;
+    opacity: 0.7;
+}
+
+.footer-image:hover{
+    border: 2px solid white;
+    opacity: 0.9;
+}
+
+.contact-form:hover, .contact-form:focus, .contact-form:active{
+    opacity: 0.9;
+}
+
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.center-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+}
+
+.content{
+    background-color: white;
+    height: 100%;
+}
+
+.pad{
+    padding: 20px;
+}
+
+.btn {
+    padding: 14px 24px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-outline {
+    background: none;
+    padding: 12px 22px;
+    margin-right: 10px;
+    width: 30%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #007AA3;
+    color: #007AA3;
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active{
+    color: #33a6cc;
+    border-color: #33a6cc;
+}
+
+.bg-water1{
+    height: 100vh;
+    width:100%; 
+    background: url('../images/water.jpg') no-repeat bottom fixed;
+}
+
+.bg-water2{
+    background: url('../images/water2.jpg') no-repeat bottom fixed; color: white;
+}
+
+.text-container {
+    height: 350px;
+    position: relative;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+.img-circle {
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.img-profile {
+    height: 300px;
+}
+
+.imgLogo{
+    width: 100px;
+    height: auto;
+}
+
+.imgBig{
+    width: 500px;
+    height: auto;
+}
+
+.imgSmall{
+    width: 300px;
+    height: auto;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+a.fill-div:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+
+    .img-profile {
+        height: 150px;
+    }
+    
+    .profile-div{
+        min-height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .right{
+        float:left;
+    }
+
+    .img-circle {
+        height: 250px;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .btn-outline {
+        width: 50%;
+    }
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

@@ -190,6 +190,16 @@ body{
     height: auto;
 }
 
+.imgBig{
+    width: 40%;
+    height: auto;
+}
+
+.imgSmall{
+    width: 40%;
+    height: auto;
+}
+
 a.fill-div {
     display: block;
     height: 100%;
