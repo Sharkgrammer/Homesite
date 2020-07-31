@@ -20,73 +20,6 @@
 
 <body>
 
-
-<div class="container-fluid border border-dark" id="project">
-    <div class="row">
-
-        {% for project in all_projects %}
-            <div class="col-sm-1"></br></div>
-
-            <div class="col-sm-10 pad">
-                <div class="border border-dark rounded text-center content">
-                    <div>
-                        <a href="{{ project.link }}" class="fill-div">
-
-                            <h3>{{ project.title }}</h3>
-
-                            <img class="imgLogo" src="{{ project.logo }}"/>
-
-                            <div class="text-left pad">
-                                {{ project.content }}
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="pad">
-                        <img class="imgBig pad" src="{{ project.big_image }}"/>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <img class="imgSmall" src="{{ project.low_image_1 }}"/>
-                            </div>
-                            <div class="col-sm-6">
-                                <img class="imgSmall" src="{{ project.low_image_2 }}"/>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-1"></br></div>
-
-        {% endfor %}
-
-    </div>
-</div>
-
-<div class="container-fluid border border-dark bg" id="test">
-
-    {% for project in all_projects %}
-        <h1>{{ project.title }}</h1>
-
-        <img src="{{ project.logo }}">
-        </br>
-    {% endfor %}
-
-
-
-    </br>
-    </br>  </br>
-    </br>  </br>
-    </br>  </br>
-    </br>  </br>
-    </br>  </br>
-    </br>
-
-
-</div>
-
-
 <div class="">
     <div class="bg-water1">
 
@@ -97,10 +30,10 @@
                 <h5 class="title">Self-driven, independent developer</h5>
 
                 <div class="button-group fadeInShort">
-                    <a class="btn btn-outline" href="#about" role="button">About me</a>
-                    <a class="btn btn-outline" href="#time" role="button">Timeline</a>
+                    <a class="btn btn-outline" href="#time" role="button">Experience</a>
                     <a class="btn btn-outline" href="#project" role="button">Projects</a>
                     <a class="btn btn-outline" href="#contact" role="button">Contact</a>
+                    <a class="btn btn-outline" href="{% static 'docs/CV.pdf' %}" role="button">CV</a>
                 </div>
             </div>
         </div>
@@ -109,40 +42,31 @@
 </div>
 
 <div class="container-fluid border border-dark" id="about">
-    </br>
-    </br>
-    <div class="row">
-        <div class="col-sm-4 pad text-center profile-div" style="height:250px">
-            <img class="img-profile" src="{% static 'images/meCircle.png' %}"/>
-        </div>
+    {% for personal in all_personals %}
+        </br>
+        </br>
+        <div class="row">
+            <div class="col-sm-4 pad text-center profile-div" style="height:250px">
+                <img class="img-profile" src="{{ personal.img }}"/>
+            </div>
 
+            <div class="col-sm-8 pad">
 
-        <div class="col-sm-8 pad">
+                <div class="text-container">
+                    <div class="vertical-center">
 
-            <div class="text-container">
-                <div class="vertical-center">
-                    <h3>Information about me</h1>
-                        <p>I study Business Information Systems in University College Cork. I'm very driven, using my
-                            free time to work on projects for fun.
-                            When I run into a problem that I haven't encountered before, I do a lot of research before
-                            deciding on the best path to take.</p>
-
-                        <p>My interests revolve around technology, both in terms of researching into new tech and trying
-                            to do new and interesting things with it.</p>
-
-
-                        <p>Finally one of my largest interests surround sharks and other sea life, which my online
-                            presence revolves around.
-                            I hope to get into shark research in the future and use my current skills to help protect
-                            sharks.</p>
-
-                        <a href="{% static 'docs/CV.pdf' %}">Find my CV here</a>
+                        <h3>{{ personal.title }}</h3>
+                        {% autoescape off %}
+                            {{ personal.content }}
+                        {% endautoescape %}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </br>
-    </br>
+        </br>
+        </br>
+    {% endfor %}
+
 </div>
 
 
@@ -153,155 +77,58 @@
 
     <div class='row'>
 
-        <div class="col-sm-12">
-            <div class='row'>
-                <div class="col-sm-4">
-                    <div class="bubbleContainer">
+        {% for experience in all_experiences %}
 
-                        <div class="bubble text-center">
-                            <img class="img-circle" src="{% static 'images/uccLogo.png' %}"/>
+            <div class="col-sm-12 pad">
+                <div class='row'>
+                    <div class="col-sm-4">
+                        <div class="text-center">
+                            <img class="img-circle" src="{{ experience.img }}"/>
                         </div>
-
                     </div>
-                </div>
 
-                <div class="col-sm-8 text-container">
-                    <div class="vertical-center pad">
-                        <h4><b>University</b></h4>
+                    <div class="col-sm-8 text-container">
+                        <div class="vertical-center pad">
+                            <h4><b>{{ experience.title }}</b></h4>
 
-                        <p>Final Year student in Business Information Systems in University College Cork</p>
-                        <p>Java and DevOps Tutor for Third Year Business Information Systems students</p>
-                        <p>Python and Prescriptive Analytics Tutor for MSc BIAS and MSc CyberRisk masters students</p>
-                    </div>
-                </div>
+                            {% autoescape off %}
+                                {{ experience.content }}
+                            {% endautoescape %}
 
-            </div>
-        </div>
-
-        <div class="col-sm-12">
-            <div class='row'>
-
-                <div class="col-sm-8 text-container">
-                    <div class="vertical-center pad">
-                        <h4 class="right"><b>Internship in State Street</b></h4>
-
-                        <p class="right">Worked within the Software Development and Maintenance team in State Street,
-                            Edinburgh, for six months</p>
-                        <p class="right">My work included working on converting legacy systems, working with cloud
-                            applications and working on a IT service platform</p>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-4">
-                    <div class="bubbleContainer">
-
-                        <div class="bubble text-center">
-                            <img class="img-circle" src="{% static 'images/stateStreetLogoBig.png' %}"/>
                         </div>
-
                     </div>
                 </div>
-
             </div>
-        </div>
+        {% endfor %}
+
     </div>
 
-    <div class="col-sm-12">
-        <div class='row'>
-            <div class="col-sm-4">
-                <div class="bubbleContainer">
-
-                    <div class="bubble text-center">
-                        <img class="img-circle" src="{% static 'images/githubLogoBig.png' %}"/>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-sm-8 text-container">
-                <div class="vertical-center pad">
-                    <h4><b>Self-driven work</b></h4>
-
-                    <p>Designed, built and published an application to read notifications out aloud</p>
-                    <p>Built a notes application to sync notes between a Desktop and an Android application</p>
-                    <p>Python command line utilities, such as a search command and a cryptocurrencey web-scraper</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
     </br>
     </br>
+
 </div>
 
 <div class="container-fluid border border-dark" id="project">
     <div class="row">
-        <div class="col-sm-4 pad">
-            <div class="border border-dark rounded text-center content">
 
-                <a href="https://github.com/Sharkgrammer/Sonar-Secure-Messaging" class="fill-div">
-                    <h3>Sonar: Secure Messenger</h3>
+        {% for project in all_projects %}
+            <div class="col-sm-4 pad">
+                <div class="border border-dark rounded text-center content">
 
-                    <img class="imgLogo" src="{% static 'images/logoSonar.png' %}"/>
+                    <a href="{{ project.link }}" class="fill-div">
+                        <h3>{{ project.title }}</h3>
 
-                    <div class="text-left pad">
-                        Secure messaging platform using the shark protocol.
+                        <img class="imgLogo" src="{{ project.logo }}"/>
 
-                        <ul>
-                            <li>Allows users to create conversations and message another user</li>
-                            <li>Built as a part of my college Final Year Project</li>
-                            <li>Will be able to set profile icons and conversation colours</li>
-                            <li>Will use a onion routing system to work as a decentralised network</li>
-                        </ul>
-
-                    </div>
-                </a>
+                        <div class="text-left pad">
+                            {% autoescape off %}
+                                {{ project.content }}
+                            {% endautoescape %}
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
-
-        <div class="col-sm-4 pad">
-            <div class="border border-dark rounded text-center content">
-                <a href="https://github.com/Sharkgrammer/notes-app" class="fill-div">
-                    <h3 class='text-center'>Notes Application</h3>
-
-                    <img class="imgLogo text-center" src="{% static 'images/logoNotes.png' %}"/>
-
-                    <div class="text-left pad">
-                        Syncs Notes between Desktop and Android
-
-                        <ul>
-                            <li>User passwords are hashed and actual note data is encrypted.</li>
-                            <li>Saves notes on a server with user accounts</li>
-                            <li>Set a number of different colours for desktop and android</li>
-                        </ul>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-sm-4 pad">
-            <div class="border border-dark rounded text-center content">
-                <a href="https://github.com/Sharkgrammer/Android-Assistant" class="fill-div">
-                    <h3 class='text-center'>Android Assistant</h3>
-
-                    <img class="imgLogo text-center" src="{% static 'images/logoAssist.png' %}"/>
-
-                    <div class="text-left pad">
-                        Notification Reading app.
-
-                        <ul>
-                            <li>Blacklist certain notifications based on their contents or via a regex expression.</li>
-                            <li>Read out a name as something user defined.</li>
-                            <li>Set a custom message per app package.</li>
-                            <li>Log notifications and blacklist from there.</li>
-                            <li>Exporting and importing custom blacklist/people/app lists.</li>
-                            <li>Use a private mode where it doesn't read out messages.</li>
-                        </ul>
-                    </div>
-                </a>
-            </div>
-        </div>
+        {% endfor %}
 
     </div>
 </div>

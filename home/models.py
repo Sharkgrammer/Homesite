@@ -6,9 +6,24 @@ class Project(models.Model):
     content = models.TextField(default="")
     link = models.TextField(default="")
     logo = models.ImageField(upload_to="stored/projects/logo", default=None)
-    big_image = models.ImageField(upload_to="stored/projects/big", default=None)
-    low_image_1 = models.ImageField(upload_to="stored/projects/low", default=None)
-    low_image_2 = models.ImageField(upload_to="stored/projects/low", default=None)
+
+    def __str__(self):
+        return self.title
+
+
+class Personal(models.Model):
+    title = models.CharField(max_length=100, default="")
+    content = models.TextField(default="")
+    img = models.ImageField(upload_to="stored/site/me", default=None)
+
+    def __str__(self):
+        return self.title
+
+
+class Experience(models.Model):
+    title = models.CharField(max_length=100, default="")
+    content = models.TextField(default="")
+    img = models.ImageField(upload_to="stored/site/exp", default=None)
 
     def __str__(self):
         return self.title

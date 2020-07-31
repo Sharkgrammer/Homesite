@@ -4,18 +4,24 @@ import os
 
 from django.shortcuts import render
 
-from home.models import Project
+from home.models import Project, Personal, Experience
 
 
 def index(request):
-    all_projects = Project.objects.all()  # [:3]
+    projects_shown = 6
+    all_projects = Project.objects.all()
+    projects_len = len(all_projects)
+    projects = reversed(list(all_projects[projects_len - projects_shown: projects_len]))
 
-    print(len(all_projects))
+    all_personals = Personal.objects.all()
 
-    for x in all_projects:
-        print(x.title)
+    all_experiences = Experience.objects.all()
+    experience_shown = 3
+    experience_len = len(all_experiences)
+    experiences = reversed(list(all_experiences[experience_len - experience_shown: experience_len]))
 
-    return render(request, 'index.html', {'all_projects': all_projects})
+    return render(request, 'index.html', {'all_projects': projects,
+                                          "all_personals": all_personals, "all_experiences": experiences})
 
 
 def email(request):
